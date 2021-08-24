@@ -21,7 +21,7 @@ farewells_2 =['',' Have a great day!','',' Have a good one!', ' Have a nice day'
 start = ['','Well! ','','hmmm..','']
 end = ['', ' Any other questions?','',' Any more questions?','',' Any more questions you wanna ask?','']
 
-reply_thanks = ['You\'re welcome!','No problem!','No worries!','Don\'t mention it. Anym more questions?', 'My pleasure.','Anytime.','Sure!']
+reply_thanks = ['You\'re welcome!','No problem!','No worries!','Don\'t mention it. Any more questions?', 'My pleasure.','Anytime.','Sure!']
 end_2= [ 'Any other questions?', 'Any more questions?', 'Any more questions you wanna ask?']
 
 errors = ['Could you repeat that please?','Sorry, I didn\'t get that.','Oops, I didn\'t get that.','hmmm.. I\'ve never heard that before. Not sure how to respond to that.','Sorry, I don\'t know how to answer that.','Sorry, I don\'t know what that means.']
