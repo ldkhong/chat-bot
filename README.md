@@ -2,10 +2,10 @@
 Author: Loc Duc Minh Khong
 
 # Introduction
-    At the school level, students learn basic concepts of many different subjects to develop a better understanding of the issues and problems around them. However, not all subjects are easy to learn and understand. Many students hate chemistry because it has a lot of information to memorize. One of the first things that students have to learn in chemistry is the periodic table, which is categorized and organized to provide the similarities and properties of the elements. Nevertheless, it requires a lot of time and effort to understand and remember the periodic table. Therefore, for this project, I want to create a chatbot that can answer questions about the periodic table of elements. With the chatbot, they can conveniently recall the information of elements and immediately get an answer to their questions. As a chatbot is like a friend who is always ready to help them, it can make learning not only be more enjoyable but also be more effective.
+   At the school level, students learn basic concepts of many different subjects to develop a better understanding of the issues and problems around them. However, not all subjects are easy to learn and understand. Many students hate chemistry because it has a lot of information to memorize. One of the first things that students have to learn in chemistry is the periodic table, which is categorized and organized to provide the similarities and properties of the elements. Nevertheless, it requires a lot of time and effort to understand and remember the periodic table. Therefore, for this project, I want to create a chatbot that can answer questions about the periodic table of elements. With the chatbot, they can conveniently recall the information of elements and immediately get an answer to their questions. As a chatbot is like a friend who is always ready to help them, it can make learning not only be more enjoyable but also be more effective.
 
 # Technical Overview
-    This project was implemented in Python 3 (ver 3.8.5). I didn't use any APIs and external libraries.
+   This project was implemented in Python 3 (ver 3.8.5). I didn't use any APIs and external libraries.
   
 # Features of my Chatbot
   _ Reply to common greeting, thanks and goodbye sentences in many different ways.
@@ -32,22 +32,21 @@ Author: Loc Duc Minh Khong
   - It can handle some variety of input questions and have from 2 -5 different ways to respond.
   
 # Input Handling
-    I used the CYKParse to parse the user input, then split the input into single word and put them in a binary tree (leaves are the words and parents are part-of-speech tags, such as N: noun, V: Verb. 
-    I also made the grammar rules and lexicons for some common inputs which I predicted that the user will chat or ask my bot.
-    If the input is not in any grammar rules or lexicons, the chatbot will send a message to the user.
+   I used the CYKParse to parse the user input, then split the input into single word and put them in a binary tree (leaves are the words and parents are part-of-speech tags, such as N: noun, V: Verb. 
+   I also made the grammar rules and lexicons for some common inputs which I predicted that the user will chat or ask my bot.
+   If the input is not in any grammar rules or lexicons, the chatbot will send a message to the user.
   
 # Internal Representations and Data Sources
-    The data of the periodic table rarely changes and is stable over time, so I do not need to access any network-available database in real-time. Instead, I will use the data of the periodic table that I have found on the internet. The data has already been written, formatted, and saved in a JSON file (​https://github.com/Bowserinator/Periodic-Table-JSON​ ). As JSON is the string representation of the data, I will convert it to a python dictionary to read the data by using the loads() function of the JSON module.
+   The data of the periodic table rarely changes and is stable over time, so I do not need to access any network-available database in real-time. Instead, I will use the data of the periodic table that I have found on the internet. The data has already been written, formatted, and saved in a JSON file (​https://github.com/Bowserinator/Periodic-Table-JSON​ ). As JSON is the string representation of the data, I will convert it to a python dictionary to read the data by using the loads() function of the JSON module.
 
 # Output Handling
-
-    First, I use the getSentenceParse(T) to get the parse tree corresponding to the complete sentence. To avoid crashing due to the function max() in getSentenceParse(), return None if the tree created CYKParse has no key start with S/0 (the sentence does not follow the grammar rules) before passing it to the max() function.
+   First, I use the getSentenceParse(T) to get the parse tree corresponding to the complete sentence. To avoid crashing due to the function max() in getSentenceParse(), return None if the tree created CYKParse has no key start with S/0 (the sentence does not follow the grammar rules) before passing it to the max() function.
   
-    Second, I modify the requestInfo dictionary and updateRequestInfo(Tr) to pull out the information that I need for my bot to reply. In updateRequestInfo(), if it finds unknown words, the function will stop immediately.
+   Second, I modify the requestInfo dictionary and updateRequestInfo(Tr) to pull out the information that I need for my bot to reply. In updateRequestInfo(), if it finds unknown words, the function will stop immediately.
   
-    Third, I create getInformation() functions to update the requestInfo.
+   Third, I create getInformation() functions to update the requestInfo.
   
-    Finally, I implement the reply function depending on the requestInfo, so my chatbot will answer correctly. If the chatbot is not capable of answering a user’s question, it will print out a message to notify the user. I hardcoded lists of different ways to respond for greetings, farewells and unexpected input, then use function randint() to randomly reply to the user.
+   Finally, I implement the reply function depending on the requestInfo, so my chatbot will answer correctly. If the chatbot is not capable of answering a user’s question, it will print out a message to notify the user. I hardcoded lists of different ways to respond for greetings, farewells and unexpected input, then use function randint() to randomly reply to the user.
       + repWhatQuestion() : handle what/where/who/ How about/ What about.
       + repReactive(): handle Which is [more/less] [reactive/metallic/nonmetallic].
       + YesNo() : handle question starts with Is/Does.
