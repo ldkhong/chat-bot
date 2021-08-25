@@ -15,13 +15,13 @@ Author: Loc Duc Minh Khong
   _ Answer question about the periodic table (Ex: How many rows/ columns? - What is the periodic table?)
   
   _ Answer to questions about some characteristics of elements.
-       + Who discovered the element.   
-       + Symbol or name of the elements. (if given name, or name if given symbol)
-       + Atomic number or atomic mass.
-       + Metal or nonmetal.
-       + Gas or solid at room temperature.
-       + Electrons and protons number.
-       + Position of elements in the periodic table.  
+       + Who discovered the element.&nbsp
+       + Symbol or name of the elements. (if given name, or name if given symbol)&nbsp
+       + Atomic number or atomic mass.&nbsp
+       + Metal or nonmetal.&nbsp
+       + Gas or solid at room temperature.&nbsp
+       + Electrons and protons number.&nbsp
+       + Position of elements in the periodic table.&nbsp 
      
   - For Comparison questions, my chat bot can compare (more or less) - reactive, metallic and nonmetallic of 2 or more elements.
   
