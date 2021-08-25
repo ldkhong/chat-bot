@@ -55,7 +55,10 @@ Author: Loc Duc Minh Khong
       + resetInfo(): reset requestInfo{}.
       + checkSymbol(), getinfo(), checkMetal(): get information of elements from datas
 
-# Example
+# Example - 1
+  ![Screen Shot 2021-08-24 at 10 08 52 PM](https://user-images.githubusercontent.com/48174888/130730115-f2c624df-8c40-4b57-84f3-e7f9e6aa36f1.png)  
+    
+# Example - 2
  ![Screen Shot 2021-08-23 at 7 29 14 PM](https://user-images.githubusercontent.com/48174888/130546349-75ba46cf-fb63-4194-9d20-7960eb14ebb3.png)
  ![Screen Shot 2021-08-23 at 7 30 53 PM](https://user-images.githubusercontent.com/48174888/130546459-86978cc0-7ec9-47bf-af91-62a4e64c5727.png)
 
