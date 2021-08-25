@@ -1,4 +1,4 @@
-# Periodict table - Chatbot.
+# Periodic table - Chatbot.
 Author: Loc Duc Minh Khong
 
 # Introduction
