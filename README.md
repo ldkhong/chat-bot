@@ -1,4 +1,4 @@
-# chat-bot.
+# Periodict table - Chatbot.
 Author: Loc Duc Minh Khong
 
 # Introduction
@@ -7,7 +7,7 @@ Author: Loc Duc Minh Khong
 # Technical Overview
    This project was implemented in Python 3 (ver 3.8.5). I didn't use any APIs and external libraries.
   
-# Features of my Chatbot
+# Features of the Chatbot
   _ Reply to common greeting, thanks and goodbye sentences in many different ways.
   
   _ Respond to unexpected replies/inputs.
