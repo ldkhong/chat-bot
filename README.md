@@ -66,4 +66,5 @@ If the chatbot is not capable of answering a user’s question, it will print ou
  ![Screen Shot 2021-08-23 at 7 30 53 PM](https://user-images.githubusercontent.com/48174888/130546459-86978cc0-7ec9-47bf-af91-62a4e64c5727.png)
 
 # How to run it?
-  On terminal: python3 Proj.py
+  Download source code to your computer
+  On the terminal: python3 Proj.py
